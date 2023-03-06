@@ -1,5 +1,5 @@
 .App {
-  text-align: center;
+  margin: 25px
 }
 
 .App-header {
@@ -17,3 +17,22 @@
   color: #61dafb;
 }
 
+ul,
+p {
+  font-size: medium;
+}
+
+img {
+  max-width: 400px;
+  max-height: auto;
+}
+
+.ingredients {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card h2 p {
+  text-align: center;
+}
