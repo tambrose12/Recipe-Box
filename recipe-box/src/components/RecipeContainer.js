@@ -7,7 +7,7 @@ function RecipeContainer() {
     const [recipes, setRecipes] = useState([])
 
     useEffect(() => {
-        fetch("http://localhost:3000/recipes")
+        fetch("http://localhost:3002/recipes")
             .then(r => r.json())
             .then(setRecipes)
     }, [])
