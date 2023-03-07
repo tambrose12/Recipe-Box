@@ -1,7 +1,7 @@
 import RecipeCard from "./RecipeCard";
 import Search from "./Search";
 
-function RecipeBox({ recipes }) {
+function RecipeBox({ recipes, handleSearchQuery }) {
 
     const renderRecipeCard = recipes.map(recipe => {
         return <RecipeCard key={recipe.id} {...recipe} />
@@ -9,7 +9,7 @@ function RecipeBox({ recipes }) {
 
     return (
         <div>
-            <Search />
+            <Search handleSearchQuery={handleSearchQuery} />
             {renderRecipeCard}
         </div>
     )

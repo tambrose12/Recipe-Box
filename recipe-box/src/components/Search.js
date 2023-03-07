@@ -1,8 +1,13 @@
 
-function Search () {
+function Search ({handleSearchQuery}) {
+
+    function handleSearch(e) {
+        handleSearchQuery(e.target.value)
+    }
+
     return ( 
         <div>
-            <input type ="text" name="search" placeholder="Search Recipes..." ></input>
+            <input onChange={handleSearch} type ="text" name="search" placeholder="Search Recipes..." ></input>
         </div>
     )
 }
