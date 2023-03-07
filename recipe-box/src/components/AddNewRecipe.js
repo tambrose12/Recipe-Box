@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import IngredientInput from "./IngredientInput";
+// import IngredientInput from "./IngredientInput";
 
 
 
@@ -54,16 +54,10 @@ function AddNewRecipe({ bringUp }) {
   }
 
 
-
-
-
-  /////// still needs Bring up callback-funtction to add data to RecipeContainer 
-
-
   return (
     <div id="container" >
       <form onSubmit={handleSubmit} className="add-recipe-form">
-        <h3>Create Recipe!</h3>
+        <h3>Add a New Recipe to Recipe Box!</h3>
         <label>Enter Recipe Name: </label>
         <br />
         <input onChange={(e) => setNewName(e.target.value)}

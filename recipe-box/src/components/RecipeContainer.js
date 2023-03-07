@@ -2,6 +2,7 @@ import RecipeBox from "./RecipeBox"
 import AddNewRecipe from "./AddNewRecipe";
 import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
+import Home from "./Home";
 
 function RecipeContainer() {
 
@@ -32,12 +33,17 @@ function handleSearchQuery (someSearch) {
     return (
         <div>
             <Switch>
-                <Route path="/recipe-box">
-                    <RecipeBox handleSearchQuery={handleSearchQuery} recipes={displaySearchResults} />
+                <Route exact path="/">
+                    <Home />
                 </Route>
                 <Route path="/recipe-box/new">
                     <AddNewRecipe bringUp={bringUp} />
                 </Route>
+                <Route path="/recipe-box">
+                    <RecipeBox handleSearchQuery={handleSearchQuery} recipes={displaySearchResults} />
+                </Route>
+
+                
             </Switch>
 
         </div>
