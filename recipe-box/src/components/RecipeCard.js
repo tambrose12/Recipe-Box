@@ -1,7 +1,7 @@
 function RecipeCard({ name, image, ingredients, directions, time, cuisine }) {
 
-    const renderIngredient = ingredients.map(ingredient => {
-        return <li key={name + ingredient}>{ingredient}</li>
+    const renderIngredient = ingredients.map((ingredient, index) => {
+        return <li key={name + index}>{ingredient}</li>
     })
 
     return (

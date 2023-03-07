@@ -1,6 +1,7 @@
 import RecipeBox from "./RecipeBox"
 import AddNewRecipe from "./AddNewRecipe";
 import { useState, useEffect } from "react";
+import { Route, Switch } from "react-router-dom";
 
 function RecipeContainer() {
 
@@ -20,8 +21,15 @@ function RecipeContainer() {
 
     return (
         <div>
-            <AddNewRecipe bringUp={bringUp} />
-            <RecipeBox recipes={recipes} />
+            <Switch>
+                <Route path="/recipe-box">
+                    <RecipeBox recipes={recipes} />
+                </Route>
+                <Route path="/recipe-box/new">
+                    <AddNewRecipe bringUp={bringUp} />
+                </Route>
+            </Switch>
+
         </div>
 
     )

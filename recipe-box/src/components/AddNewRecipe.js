@@ -41,7 +41,15 @@ function AddNewRecipe({ bringUp }) {
       ingredients: newIngredients
     }
 
-    bringUp(newRecipe)
+    fetch("http://localhost:3002/recipes", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(newRecipe),
+    })
+      .then(r => r.json())
+      .then(newRecipe => bringUp(newRecipe))
 
   }
 

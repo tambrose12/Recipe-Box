@@ -1,23 +1,29 @@
 import { NavLink } from "react-router-dom";
 
-function Header () {
+function Header() {
 
     return (
         <header>
-           <h1>Recipe Box</h1> 
-           <div>
+            <h1>Recipe Box</h1>
+            <div>
                 <NavLink
-                 exact
-                 to="/"
+                    exact
+                    to="/"
                 >
-                Home
+                    Home
                 </NavLink>
+                <br />
                 <NavLink
-                exact
-                to="/recipe-box">
+                    exact
+                    to="/recipe-box">
                     Recipe Box
                 </NavLink>
-           </div>
+                <br />
+                <NavLink
+                    exact to="/recipe-box/new">
+                    Add New Recipe
+                </NavLink>
+            </div>
         </header>
     )
 }
