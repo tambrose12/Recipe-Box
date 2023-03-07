@@ -14,16 +14,14 @@ function RecipeContainer() {
 
 
 
-    const bringup = newNew => {
+    const bringUp = newNew => {
         setRecipes([...recipes, newNew])
     }
 
     return (
         <div>
-            <h1>
-                <AddNewRecipe bringup={bringup} />
-                <RecipeBox recipes={recipes} />
-            </h1>
+            <AddNewRecipe bringUp={bringUp} />
+            <RecipeBox recipes={recipes} />
         </div>
 
     )

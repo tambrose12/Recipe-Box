@@ -8,11 +8,12 @@ function RecipeCard({ name, image, ingredients, directions, time, cuisine }) {
 
         <div className="card">
             <h2>{name}</h2>
-            <p>{time} | {cuisine}</p>
+            <p>{`Total Time: ${time} minutes`} | {cuisine}</p>
             <div className="ingredients" >
                 <img src={image} alt={name} />
 
                 <ul>
+                    <h3>Ingredients</h3>
                     {renderIngredient}
                 </ul>
             </div>
