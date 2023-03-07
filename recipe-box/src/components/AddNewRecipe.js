@@ -3,31 +3,37 @@ import IngredientInput from "./IngredientInput";
 
 
 
-function AddNewRecipe({ Bringup }) {
+function AddNewRecipe({ bringup }) {
 
   const [newName, setNewName] = useState('')
   const [newImage, setNewImage] = useState('')
   const [newDirections, setNewDirections] = useState('')
   const [newTime, setNewTime] = useState('')
   const [newCuisine, setNewCuisine] = useState('')
-  const [newIngredients, setNewIngredients] = useState([])
+
+  const [newIngredients, setNewIngredients] = useState([''])
   const [numberOfIngredients, setNumberOfIngredients] = useState(1)
 
+  const renderInputs = () => {
+
+  }
 
 
+
+  const newRecipe = {
+    name: newName,
+    image: newImage,
+    directions: newDirections,
+    time: newTime,
+    cuisine: newCuisine,
+    ingredients: [newIngredients]
+  }
 
   const handleSubmit = e => {
     e.preventDefault()
 
-    const newRecipe = {
-      name: newName,
-      image: newImage,
-      directions: newDirections,
-      time: newTime,
-      cuisine: newCuisine,
-      ingredients: [newIngredients]
-    }
-    Bringup(newRecipe)
+
+    bringup(newRecipe)
 
   }
 
@@ -40,9 +46,13 @@ function AddNewRecipe({ Bringup }) {
     let ingredientInputArray = []
     for (let i = 0; i < numberOfIngredients; i++) {
       ingredientInputArray = [...ingredientInputArray,
-      <input key={i} onChange={(e) => { setNewIngredients(e.target.value) }}
+      <input key={i} onChange={(e) => {
+        const name = e.target.value;
+        setNewIngredients(newRecipe.ingredients.map((x) =>
+          x.key === i.key ? name : x))
+      }}
         type="text"
-        name={`ingredients${i}`}
+        name="ingredients"
         placeholder="Enter a Recipe's Ingredients..."
         className="input-text"
       />
