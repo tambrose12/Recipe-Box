@@ -1,24 +1,47 @@
-function RecipeCard({ name, image, ingredients, directions, time, cuisine }) {
+import {useState} from "react";
 
-    const renderIngredient = ingredients.map((ingredient, index) => {
-        return <li key={name + index}>{ingredient}</li>
+
+const RecipeFront = ({recipe}) => {
+    return (
+        <div>
+            <h2>{recipe.name}</h2>
+         <p>{`Total Time ${recipe.time} minutes`} | {recipe.cuisine}</p>
+         <img src={recipe.image} alt={recipe.name} />
+        </div>
+    )
+}
+
+const RecipeBack = ({recipe, renderIngredient}) => {
+    return (
+        <div>
+            <ul>
+                <h3>Ingredients</h3>
+                {renderIngredient}
+            </ul>
+            <h3>Directions</h3>
+            <p>{recipe.directions}</p>
+        </div>
+
+    )
+}
+
+
+function RecipeCard({ recipe}) {
+    const [showFront, setShowFront] = useState(true)
+
+    const toggleFront = () => {
+        setShowFront(showFront => !showFront)
+    }
+
+    const renderIngredient = recipe.ingredients.map((ingredient, index) => {
+        return <li key={recipe.name + index}>{ingredient}</li>
     })
+
 
     return (
 
-        <div className="card">
-            <h2>{name}</h2>
-            <p>{`Total Time: ${time} minutes`} | {cuisine}</p>
-            <div className="ingredients" >
-                <img src={image} alt={name} />
-
-                <ul>
-                    <h3>Ingredients</h3>
-                    {renderIngredient}
-                </ul>
-            </div>
-            <h3>Directions</h3>
-            <p>{directions}</p>
+        <div onClick={toggleFront} className="ui three wide column image card">
+             {showFront ? <RecipeFront recipe={recipe} /> : <RecipeBack renderIngredient={renderIngredient} recipe={recipe} /> }
         </div>
 
     )
