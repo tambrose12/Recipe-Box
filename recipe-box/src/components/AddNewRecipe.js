@@ -1,13 +1,15 @@
 import React, {useState} from "react";
 
 
-function AddNewRecipe () {
+function AddNewRecipe ({Bringup}) {
 
     const [newName, setNewName] = useState('')
     const [newImage, setNewImage] = useState('')
     const [newDirections, setNewDirections] = useState('')
     const [newTime, setNewTime] = useState('')
     const [newCuisine, setNewCuisine] = useState('')
+    const [newIngredients, setNewIngredients] = useState([])
+
     
 
 
@@ -19,9 +21,24 @@ function AddNewRecipe () {
             image: newImage,
             directions: newDirections,
             time: newTime,
-            cuisine: newCuisine
+            cuisine: newCuisine,
+            ingredients: [newIngredients]
         }
-        console.log(newRecipe)
+        Bringup(newRecipe)
+
+    }
+    const BigFunction = () => {
+      return (
+        <input onChange={(e)=> setNewIngredients([...newIngredients, e.target.value])}
+          value={newIngredients}
+          type="text"
+          name="ingredients"
+          placeholder="Enter a Recipe's Ingredients..."
+          className="input-text"
+        />
+
+      )
+
     }
 
     /////// still needs Bring up callback-funtction to add data to RecipeContainer 
@@ -68,6 +85,16 @@ function AddNewRecipe () {
           type="text"
           name="cuisine"
           placeholder="Enter a Recipe's Cuisine..."
+          className="input-text"
+        />
+        <br />
+        <img src="https://static.thenounproject.com/png/3557455-200.png" alt="trying" onClick={BigFunction}/>
+        <br />
+        <input onChange={(e)=> setNewIngredients(e.target.value)}
+        value={newIngredients}
+          type="text"
+          name="ingredients"
+          placeholder="Enter a Recipe's Ingredients..."
           className="input-text"
         />
         <br />

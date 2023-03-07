@@ -12,12 +12,16 @@ function RecipeContainer() {
             .then(setRecipes)
     }, [])
 
-    console.log(recipes)
+    
+
+    const Bringup = newNew => {
+        setRecipes([...recipes, newNew])
+    }
 
     return (
         <div>
             <h1>
-                <AddNewRecipe />
+                <AddNewRecipe Bringup={Bringup} />
                 <RecipeBox recipes={recipes} />
             </h1>
         </div>
