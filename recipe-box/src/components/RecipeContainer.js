@@ -30,6 +30,13 @@ function handleSearchQuery (someSearch) {
         setRecipes([...recipes, newNew])
     }
 
+    const [sort, setSort] = useState( '' )
+
+    const updateSort = newValue => setSort(newValue)
+
+    console.log(sort)
+
+
     return (
         <div>
             <Switch>
@@ -40,7 +47,9 @@ function handleSearchQuery (someSearch) {
                     <AddNewRecipe bringUp={bringUp} />
                 </Route>
                 <Route path="/recipe-box">
-                    <RecipeBox handleSearchQuery={handleSearchQuery} recipes={displaySearchResults} />
+                    <RecipeBox handleSearchQuery={handleSearchQuery}
+                     recipes={displaySearchResults} 
+                     updateSort={updateSort}/>
                 </Route>
 
                 
