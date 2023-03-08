@@ -89,3 +89,8 @@ ul {
   padding-top: 15px;
   padding-bottom: 50px;
 }
+
+#sort {
+  display: flex;
+  justify-content: center;
+}

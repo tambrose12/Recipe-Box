@@ -9,7 +9,19 @@ function RecipeContainer() {
     const [recipes, setRecipes] = useState([]);
     const [searchQuery, setSearchQuery] = useState('');
 
-    
+
+    const [sort, setSort] = useState('')
+
+    const updateSort = newValue => setSort(newValue)
+
+    const byCuisine = (recipeObj) => {
+        return sort === recipeObj.cuisine.toLowerCase()
+    }
+
+    const filteredByCuisine = sort ? recipes.filter(byCuisine) : [...recipes]
+
+    console.log(filteredByCuisine)
+
 
     useEffect(() => {
         fetch("http://localhost:3002/recipes")
@@ -17,24 +29,19 @@ function RecipeContainer() {
             .then(setRecipes)
     }, [])
 
-function handleSearchQuery (someSearch) {
+    function handleSearchQuery(someSearch) {
         setSearchQuery(someSearch.toLowerCase())
     }
 
 
-    const displaySearchResults = recipes.filter(r =>  {
-       return r.name.toLowerCase().includes(searchQuery)
+    const displaySearchResults = filteredByCuisine.filter(r => {
+        return r.name.toLowerCase().includes(searchQuery)
     })
 
     const bringUp = newNew => {
         setRecipes([...recipes, newNew])
     }
 
-    const [sort, setSort] = useState( '' )
-
-    const updateSort = newValue => setSort(newValue)
-
-    console.log(sort)
 
 
     return (
@@ -48,11 +55,12 @@ function handleSearchQuery (someSearch) {
                 </Route>
                 <Route path="/recipe-box">
                     <RecipeBox handleSearchQuery={handleSearchQuery}
-                     recipes={displaySearchResults} 
-                     updateSort={updateSort}/>
+                        recipes={displaySearchResults}
+                        updateSort={updateSort}
+                    />
                 </Route>
 
-                
+
             </Switch>
 
         </div>

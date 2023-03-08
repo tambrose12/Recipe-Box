@@ -10,9 +10,10 @@ function RecipeBox({ recipes, handleSearchQuery, updateSort }) {
 
     return (
         <div>
-            <Sort updateSort={updateSort}/>
-            <Search handleSearchQuery={handleSearchQuery} />
-            
+            <div id='sort'>
+                <Search handleSearchQuery={handleSearchQuery} />
+                <Sort updateSort={updateSort} />
+            </div>
             <div >
                 <div id="box" className="ui three column grid three wide">
                     {renderRecipeCard}
