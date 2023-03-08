@@ -69,6 +69,7 @@ function AddNewRecipe({ bringUp }) {
         />
         <br />
         <label>Enter Recipe Image URL: </label>
+        <br />
         <input onChange={(e) => setNewImage(e.target.value)}
           value={newImage}
           type="text"
@@ -78,6 +79,7 @@ function AddNewRecipe({ bringUp }) {
         />
         <br />
         <label>Enter Recipe Directions: </label>
+        <br />
         <input onChange={(e) => setNewDirections(e.target.value)}
           value={newDirections}
           type="text"

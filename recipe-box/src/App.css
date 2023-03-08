@@ -24,8 +24,10 @@ p {
 }
 
 img {
-  max-width: 400px;
-  max-height: auto;
+  max-width: auto;
+  max-height: 300px;
+  justify-content: center;
+  padding-bottom: 15px;
 }
 
 .ingredients {
@@ -63,4 +65,18 @@ select {
 
 ul {
   list-style: none;
+}
+
+/* 
+#box {
+  display: flex;
+  margin-top: 30px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: space-between;
+} */
+
+#search {
+  padding-top: 15px;
+  padding-bottom: 50px;
 }

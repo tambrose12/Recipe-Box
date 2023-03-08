@@ -1,19 +1,21 @@
-import {useState} from "react";
+import { useState } from "react";
 
 
-const RecipeFront = ({recipe}) => {
+const RecipeFront = ({ recipe }) => {
     return (
-        <div>
+        <div >
             <h2>{recipe.name}</h2>
-         <p>{`Total Time ${recipe.time} minutes`} | {recipe.cuisine}</p>
-         <img src={recipe.image} alt={recipe.name} />
+            <p>{`Total Time ${recipe.time} minutes`} | {recipe.cuisine}</p>
+            <div className="ui image">
+                <img src={recipe.image} alt={recipe.name} className="ui image" />
+            </div>
         </div>
     )
 }
 
-const RecipeBack = ({recipe, renderIngredient}) => {
+const RecipeBack = ({ recipe, renderIngredient }) => {
     return (
-        <div>
+        <div >
             <ul>
                 <h3>Ingredients</h3>
                 {renderIngredient}
@@ -26,7 +28,7 @@ const RecipeBack = ({recipe, renderIngredient}) => {
 }
 
 
-function RecipeCard({ recipe}) {
+function RecipeCard({ recipe }) {
     const [showFront, setShowFront] = useState(true)
 
     const toggleFront = () => {
@@ -39,11 +41,11 @@ function RecipeCard({ recipe}) {
 
 
     return (
-
-        <div onClick={toggleFront} className="ui three wide column image card">
-             {showFront ? <RecipeFront recipe={recipe} /> : <RecipeBack renderIngredient={renderIngredient} recipe={recipe} /> }
+        <div className="column">
+            <div onClick={toggleFront} className="ui grid four wide column fluid card">
+                {showFront ? <RecipeFront recipe={recipe} /> : <RecipeBack renderIngredient={renderIngredient} recipe={recipe} />}
+            </div>
         </div>
-
     )
 }
 

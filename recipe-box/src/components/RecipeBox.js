@@ -10,10 +10,12 @@ function RecipeBox({ recipes, handleSearchQuery }) {
     return (
         <div>
             <Search handleSearchQuery={handleSearchQuery} />
-            <div className="ui grid container" >
-                {renderRecipeCard}
+            <div >
+                <div id="box" className="ui three column grid three wide">
+                    {renderRecipeCard}
+                </div>
             </div>
-            
+
         </div>
     )
 }
