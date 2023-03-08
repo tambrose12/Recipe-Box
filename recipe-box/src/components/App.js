@@ -1,5 +1,6 @@
 import '../App.css';
 import Header from './Header';
+import Footer from './Footer';
 // import Home from './Home';
 import RecipeContainer from './RecipeContainer';
 // import { Route, Switch } from "react-router-dom";
@@ -16,6 +17,7 @@ function App() {
           <RecipeContainer />
         {/* </Route>
       </Switch> */}
+      <Footer />
     </div>
   );
 }
