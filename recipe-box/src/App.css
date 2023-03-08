@@ -14,8 +14,6 @@ footer {
 }
 
 .footer {
-  padding-top: 15px;
-  padding-bottom: 15px;
   margin-top: auto;
   bottom: 0;
   justify-content: center;
@@ -103,4 +101,8 @@ ul {
 
 .selector {
   margin-top: 15px;
+}
+
+footer p {
+  margin-bottom: 0;
 }

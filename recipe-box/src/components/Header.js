@@ -5,7 +5,7 @@ function Header() {
     return (
         <header>
             <h1>Recipe Box</h1>
-            <div className="navLink" > 
+            <div className="navLink" >
                 <NavLink
                     exact
                     to="/"
@@ -18,14 +18,14 @@ function Header() {
                     exact
                     to="/recipe-box"
                     className="submit ui teal button"
-                    >
-                    Recipe Box
+                >
+                    The Recipe Box
                 </NavLink>
                 <br />
                 <NavLink
                     exact to="/recipe-box/new"
                     className="submit ui teal button"
-                    >
+                >
                     Add New Recipe
                 </NavLink>
             </div>
