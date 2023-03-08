@@ -16,8 +16,8 @@ const RecipeFront = ({ recipe }) => {
 const RecipeBack = ({ recipe, renderIngredient }) => {
     return (
         <div >
+            <h3>Ingredients</h3>
             <ul>
-                <h3>Ingredients</h3>
                 {renderIngredient}
             </ul>
             <h3>Directions</h3>

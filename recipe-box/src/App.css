@@ -81,14 +81,9 @@ ul {
   list-style: none;
 }
 
-/* 
-#box {
-  display: flex;
-  margin-top: 30px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: space-between;
-} */
+ul {
+  text-align: start;
+}
 
 #search {
   padding-top: 15px;

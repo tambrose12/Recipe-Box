@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // import IngredientInput from "./IngredientInput";
-import {useInputs} from './hooks.js'
+import { useInputs } from './hooks.js'
 
 
 
@@ -12,27 +12,14 @@ function AddNewRecipe({ bringUp }) {
   const [newTime, setNewTime] = useState(0)
   const [newCuisine, setNewCuisine] = useState('')
 
-  const [newIngredients, setNewIngredients] = useState(['', '', '', '', '', '', '', '', ''])
-  // const [numberOfIngredients, setNumberOfIngredients] = useState(1)
-
-  // const renderIngedientInputs = () => {
-  //   return newIngredients.map((string, index) => {
-  //     const updateIngredientArray = e => {
-  //       const newIngredientArray = [...newIngredients]
-  //       newIngredientArray[index] = e.target.value
-  //       setNewIngredients(newIngredientArray)
-  //     }
-  //     return <input
-  //       key={index}
-  //       onChange={updateIngredientArray}
-  //     />
-  //   })
-  // }
+  const theIngredientInputs = useInputs()
+  const addAnotherInput = () => theIngredientInputs.add()
+  const indexElements = theIngredientInputs.display()
 
 
   const handleSubmit = e => {
     e.preventDefault()
-    
+
 
     const newRecipe = {
       name: newName,
@@ -40,7 +27,7 @@ function AddNewRecipe({ bringUp }) {
       directions: newDirections,
       time: newTime,
       cuisine: newCuisine,
-      ingredients: theInputs.value
+      ingredients: theIngredientInputs.value
     }
 
     fetch("http://localhost:3002/recipes", {
@@ -54,15 +41,6 @@ function AddNewRecipe({ bringUp }) {
       .then(newRecipe => bringUp(newRecipe))
 
   }
-
-
-  const theInputs = useInputs()
-  const addOneMore = () => theInputs.add()
-  const indexElements = theInputs.display()
-  
-  
-
-
 
 
   return (
@@ -121,20 +99,14 @@ function AddNewRecipe({ bringUp }) {
           <option>Thai</option>
         </select>
         <br />
-        {/* <label>Enter Number of Ingredients: </label>
-        <input onChange={(e) => setNumberOfIngredients(e.target.value)}
-          type="number"
-          placeholder="How many ingredients are in the recipe"
-        />
-        <br /> */}
+
         <label>Enter Ingredients: </label>
         <br />
-        {/* {setNewIngredients( theInputs.value)} */}
         <div>
-          { indexElements}
+          {indexElements}
         </div>
         <br />
-        <span className="submit ui gray button" onClick={ addOneMore }>
+        <span className="submit ui gray button" onClick={addAnotherInput}>
           Add Ingredient
         </span>
         <br />
