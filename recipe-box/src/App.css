@@ -10,11 +10,17 @@
 }
 
 footer {
+  margin-top: 50px;
+}
+
+.footer {
   padding-top: 15px;
   padding-bottom: 15px;
   margin-top: auto;
   bottom: 0;
   justify-content: center;
+  display: flex;
+  flex-direction: row;
 }
 
 .App-header {
