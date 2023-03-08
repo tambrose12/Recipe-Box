@@ -12,6 +12,7 @@ function RecipeBox({ recipes, handleSearchQuery, updateSort }) {
         <div>
             <div id='sort'>
                 <Search handleSearchQuery={handleSearchQuery} />
+                <br />
                 <Sort updateSort={updateSort} />
             </div>
             <div >

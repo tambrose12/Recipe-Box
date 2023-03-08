@@ -7,8 +7,8 @@ function Sort({ updateSort }) {
 
 
     return (
-        <select onChange={handleUpdate} className="ui input">
-            <option value="">Sort By Cuisine Type</option>
+        <select placeholder="Sort By Cuisine Type..." onChange={handleUpdate} className="ui selection dropdown selector" >
+            <option value=""></option>
             <option value="american">American</option>
             <option value="chinese">Chinese</option>
             <option value="greek">Greek</option>
