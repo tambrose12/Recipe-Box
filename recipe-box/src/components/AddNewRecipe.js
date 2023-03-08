@@ -67,7 +67,7 @@ function AddNewRecipe({ bringUp }) {
 
   return (
     <div id="container" >
-      <form onSubmit={handleSubmit} className="add-recipe-form">
+      <form onSubmit={handleSubmit} className="ui form add-recipe-form">
         <h3>Add a New Recipe to Recipe Box!</h3>
         <label>Enter Recipe Name: </label>
         <br />
@@ -133,15 +133,17 @@ function AddNewRecipe({ bringUp }) {
         <div>
           { indexElements}
         </div>
-        <span onClick={ addOneMore }>
-          ADD INPUT "BUTTON"
+        <br />
+        <span className="submit ui gray button" onClick={ addOneMore }>
+          Add Ingredient
         </span>
+        <br />
         <br />
         <input
           type="submit"
           name="submit"
           value="Create New Recipe"
-          className="submit"
+          className="submit ui teal button"
         />
       </form>
     </div>

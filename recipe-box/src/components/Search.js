@@ -7,7 +7,15 @@ function Search({ handleSearchQuery }) {
 
     return (
         <div id="search">
-            <input onChange={handleSearch} type="text" name="search" placeholder="Search Recipes..." ></input>
+            <div class="ui icon input">
+            <input 
+            onChange={handleSearch} 
+            placeholder="Search Recipes..." 
+            name="search" 
+            type="text" />
+            <i class="search icon"></i>
+            
+            </div>
         </div>
     )
 }

@@ -17,7 +17,7 @@ export const useInputs = ( anArray = [''] ) => {
                 })
             }
             const props = {onChange, placeholder, value: value[i]}
-            return <input {...props } />
+            return <input {...props } placeholder="Add Ingredient..."/>
         }))
     }
     return {value, display, add}
