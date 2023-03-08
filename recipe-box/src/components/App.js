@@ -14,10 +14,12 @@ function App() {
           <Home />
         </Route>
         <Route exact path="/recipe-box" > */}
-          <RecipeContainer />
-        {/* </Route>
+      <RecipeContainer />
+      {/* </Route>
       </Switch> */}
-      <Footer />
+      <footer>
+        <Footer />
+      </footer>
     </div>
   );
 }

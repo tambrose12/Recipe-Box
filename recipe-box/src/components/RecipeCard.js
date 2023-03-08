@@ -7,7 +7,7 @@ const RecipeFront = ({ recipe }) => {
             <h2>{recipe.name}</h2>
             <p>{`Total Time ${recipe.time} minutes`} | {recipe.cuisine}</p>
             <div className="ui image">
-                <img src={recipe.image} alt={recipe.name} className="ui image" />
+                <img src={recipe.image} alt={recipe.name} />
             </div>
         </div>
     )

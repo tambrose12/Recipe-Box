@@ -1,11 +1,11 @@
 
 
-function Footer () {
+function Footer() {
 
     return (
-        <footer>
+        <div>
             helllo
-        </footer>
+        </div>
     )
 }
 
