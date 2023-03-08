@@ -103,9 +103,11 @@ function AddNewRecipe({ bringUp }) {
           <option>Choose Cuisine</option>
           <option>American</option>
           <option>Chinese</option>
+          <option>Greek</option>
           <option>Italian</option>
           <option>Japanese</option>
           <option>Mexican</option>
+          <option>Thai</option>
         </select>
         <br />
         {/* <label>Enter Number of Ingredients: </label>
