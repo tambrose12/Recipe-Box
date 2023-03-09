@@ -2,6 +2,9 @@ import { useState } from "react";
 
 
 const RecipeFront = ({ recipe }) => {
+    
+
+
     return (
         <div>
             <h2>{recipe.name}</h2>
@@ -9,6 +12,9 @@ const RecipeFront = ({ recipe }) => {
             <div className="ui image cardImg">
                 <img src={recipe.image} alt={recipe.name} />
             </div>
+            <br />
+           
+            <br />
         </div>
     )
 }
@@ -30,7 +36,11 @@ const RecipeBack = ({ recipe, renderIngredient }) => {
 
 function RecipeCard({ recipe }) {
     const [showFront, setShowFront] = useState(true)
+    const [isLiked, setIsLiked] = useState(false)
 
+    function handleLike () {
+    setIsLiked(!isLiked)
+    }
     const toggleFront = () => {
         setShowFront(showFront => !showFront)
     }
@@ -45,6 +55,7 @@ function RecipeCard({ recipe }) {
             <div onClick={toggleFront} className="ui grid four wide column fluid card">
                 {showFront ? <RecipeFront recipe={recipe} /> : <RecipeBack renderIngredient={renderIngredient} recipe={recipe} />}
             </div>
+            <i onClick={handleLike} className= {isLiked ? "heart icon" : "heart outline icon"}></i>
         </div>
     )
 }

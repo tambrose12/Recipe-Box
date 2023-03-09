@@ -16,7 +16,7 @@ function Sort({ updateSort }) {
             <option value="japanese">Japanese</option>
             <option value="mexican">Mexican</option>
             <option value="thai">Thai</option>
-        </select>
+        </select> 
     );
 }
 

@@ -76,6 +76,7 @@ p {
   text-align: center;
 }
 
+
 label {
   font-size: small;
   margin-bottom: none;
@@ -144,4 +145,8 @@ footer p {
 #adam {
   max-height: 75px;
   max-width: auto;
+}
+
+.deleteRecipe {
+  margin-bottom: 15px;
 }
