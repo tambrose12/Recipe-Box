@@ -42,10 +42,12 @@ p {
 }
 
 img {
-  max-width: auto;
-  max-height: 300px;
+  width: 285px;
+  height: 300px;
   justify-content: center;
   padding-bottom: 15px;
+  min-height: 300px;
+  object-fit: cover;
 }
 
 .ingredients {
