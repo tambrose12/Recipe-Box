@@ -9,20 +9,37 @@
   justify-content: center;
 }
 
-header {
+#header {
   background-color: #c5d9cb;
-  padding-top: 15px;
-  padding-bottom: 15px;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  padding-left: 45px;
+  padding-right: 25px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+#header h1 {
+  font-size: 45px;
+}
+
+.material-symbols-outlined {
+  font-size: 55px;
+  font-variation-settings:
+    'FILL' 0,
+    'wght' 400,
+    'GRAD' 0,
+    'opsz' 48
 }
 
 h1 {
-
+  color: #535862;
   font-weight: bolder;
   font-size: 80px;
 }
 
 footer {
-  margin-top: 50px;
   background-color: #c5d9cb;
   padding-top: 15px;
   padding-bottom: 15px;
@@ -137,7 +154,7 @@ footer p {
 
 .swipe {
   justify-content: center;
-  height: 200px;
+  height: 300px;
   width: auto;
 
 }
@@ -149,4 +166,64 @@ footer p {
 
 .deleteRecipe {
   margin-bottom: 15px;
+}
+
+#homePage {
+  display: flex;
+  flex-direction: row;
+}
+
+#main {
+  padding-left: 25px;
+}
+
+#main p {
+  font-size: 20px;
+  color: #535862;
+}
+
+#main h1,
+h2 {
+  color: #535862;
+}
+
+.utensil.spoon.icon {
+  padding-top: 50px;
+  font-size: 40px;
+  padding-bottom: 15px;
+}
+
+.navLink {
+  max-height: 36px;
+}
+
+/* 
+#social {
+  padding-top: 15px;
+  font-size: 20px;
+} */
+
+#social {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  background-color: #d0d4dd;
+  font-size: 20px;
+  margin-top: 15px;
+  margin-bottom: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+#grace {
+  flex-grow: 1;
+
+}
+
+#taylor {
+  flex-grow: 1;
+}
+
+#duggan {
+  flex-grow: 1;
 }

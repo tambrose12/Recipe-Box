@@ -4,8 +4,13 @@ function Header() {
 
     return (
         <div>
-            <header>
-                <h1>Recipe Box</h1>
+            <header id="header">
+                <div>
+                    <h1><i class="material-symbols-outlined">
+                        restaurant_menu
+                    </i> Recipe Box</h1>
+
+                </div>
                 <div className="navLink" >
                     <NavLink
                         exact
