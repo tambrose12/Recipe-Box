@@ -1,40 +1,36 @@
 import { NavLink } from "react-router-dom";
 
-function Header({buttonText, onDarkModeClick}) {
+function Header() {
 
     return (
         <div>
-            <div id="toggleDarkMode">
-                <button className= "ui toggle button" onClick={onDarkModeClick} >{buttonText} Mode</button>
-            </div>
-        
-        <header>
-            <h1>Recipe Box</h1>
-            <div className="navLink" >
-                <NavLink
-                    exact
-                    to="/"
-                    className="submit ui teal button"
-                >
-                    Home
-                </NavLink>
-                <br />
-                <NavLink
-                    exact
-                    to="/recipe-box"
-                    className="submit ui teal button"
-                >
-                    The Recipe Box
-                </NavLink>
-                <br />
-                <NavLink
-                    exact to="/recipe-box/new"
-                    className="submit ui teal button"
-                >
-                    Add New Recipe
-                </NavLink>
-            </div>
-        </header>
+            <header>
+                <h1>Recipe Box</h1>
+                <div className="navLink" >
+                    <NavLink
+                        exact
+                        to="/"
+                        className="submit ui teal button"
+                    >
+                        Home
+                    </NavLink>
+                    <br />
+                    <NavLink
+                        exact
+                        to="/recipe-box"
+                        className="submit ui teal button"
+                    >
+                        The Recipe Box
+                    </NavLink>
+                    <br />
+                    <NavLink
+                        exact to="/recipe-box/new"
+                        className="submit ui teal button"
+                    >
+                        Add New Recipe
+                    </NavLink>
+                </div>
+            </header>
         </div>
     )
 }

@@ -40,6 +40,7 @@ function AddNewRecipe({ bringUp }) {
       .then(r => r.json())
       .then(newRecipe => bringUp(newRecipe))
 
+
   }
 
 
@@ -107,7 +108,7 @@ function AddNewRecipe({ bringUp }) {
         </div>
         <br />
         <span className="submit ui gray button" onClick={addAnotherInput}>
-          Add Ingredient
+          Add Another Ingredient
         </span>
         <br />
         <br />

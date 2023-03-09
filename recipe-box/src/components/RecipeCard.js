@@ -3,7 +3,7 @@ import { useState } from "react";
 
 const RecipeFront = ({ recipe }) => {
     return (
-        <div >
+        <div>
             <h2>{recipe.name}</h2>
             <p>{`Total Time ${recipe.time} minutes`} | {recipe.cuisine}</p>
             <div className="ui image cardImg">
@@ -15,7 +15,7 @@ const RecipeFront = ({ recipe }) => {
 
 const RecipeBack = ({ recipe, renderIngredient }) => {
     return (
-        <div >
+        <div>
             <h3>Ingredients</h3>
             <ul>
                 {renderIngredient}
