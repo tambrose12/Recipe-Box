@@ -2,6 +2,7 @@ import React, { useState } from "react";
 // import IngredientInput from "./IngredientInput";
 import { useInputs } from './hooks.js'
 import Modal from "react-modal";
+import {NavLink} from "react-router-dom";
 
 const customStyles = {
   content: {
@@ -146,8 +147,12 @@ function AddNewRecipe({ bringUp }) {
       >
         <div>
           <h2>Success! Recipe Submitted!</h2>
-          <p>Go back to the Recipe Box and your recipe should appear at the bottom of the list of recipe cards!</p>
-          <button onClick={() => setModalOpen(false)} className="ui teal button">Close</button>
+          <NavLink
+          exact 
+          to="/recipe-box"
+           onClick={() => setModalOpen(false)} className="ui teal button">
+            Back to Recipe Box
+           </NavLink>
         </div>
       </Modal>
     </div>
