@@ -1,23 +1,22 @@
-# Getting Started with Create React App
+# Phase 2 Project - Recipe Box
+## Created in React.js by Kevin Tom Duggan, Taylor Ambrose, and Grace Nieboer
+## additional credit below to Adam La Rosa 
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is the culmination of skills learned for during Flatiron School's Phase 2, focused on React.js. 
 
-## Available Scripts
+We created our own db.json file rather than an API so that we could customize the data structure for our purposes. 
+The db.json file is located in a separate repository to give us the option to deploy the site at a later time.
 
-In the project directory, you can run:
+For the visual styling element of the application, we installed Semantic UI CSS  paired with some of our own custom CSS classes. 
 
-### `npm start`
+We implemented one custom hook to dynamically render our ingredient list; this custom hook is located in the hook.js component, and all code for the hook is credited to the great wizard, *Adam La Rosa*.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
 
-### `npm test`
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+
+
+
 
 ### `npm run build`
 
@@ -39,11 +38,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 
 You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
 
 ### Code Splitting
 
