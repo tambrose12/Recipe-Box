@@ -34,6 +34,14 @@ function Header() {
                     >
                         Add New Recipe
                     </NavLink>
+                    <br/>
+                    <NavLink
+                        exact to="/about"
+                        className="submit ui teal button"
+                    >
+                        About 
+                    </NavLink>
+
                 </div>
             </header>
         </div>

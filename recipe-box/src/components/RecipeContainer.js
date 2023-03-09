@@ -3,6 +3,7 @@ import AddNewRecipe from "./AddNewRecipe";
 import { useState, useEffect } from "react";
 import { Route, Switch } from "react-router-dom";
 import Home from "./Home";
+import About from "./About"
 
 function RecipeContainer() {
 
@@ -56,6 +57,9 @@ function RecipeContainer() {
                         recipes={displaySearchResults}
                         updateSort={updateSort}
                     />
+                </Route>
+                <Route path="/about">
+                    <About />
                 </Route>
 
 
