@@ -1,7 +1,20 @@
 import React, { useState } from "react";
 // import IngredientInput from "./IngredientInput";
 import { useInputs } from './hooks.js'
+import Modal from "react-modal";
 
+const customStyles = {
+  content: {
+    top: "30%",
+    left: "50%",
+    right: "auto",
+    bottom: "auto",
+    marginRight: "-50%",
+    transform: "translate(-50%, -50%)",
+    backgroundColor: "white",
+    width: 400,
+  },
+};
 
 
 function AddNewRecipe({ bringUp }) {
@@ -15,11 +28,11 @@ function AddNewRecipe({ bringUp }) {
   const theIngredientInputs = useInputs()
   const addAnotherInput = () => theIngredientInputs.add()
   const indexElements = theIngredientInputs.display()
+  const [modalOpen, setModalOpen] = useState(false);
 
 
   const handleSubmit = e => {
     e.preventDefault()
-
 
     const newRecipe = {
       name: newName,
@@ -40,7 +53,7 @@ function AddNewRecipe({ bringUp }) {
       .then(r => r.json())
       .then(newRecipe => bringUp(newRecipe))
 
-
+    setModalOpen(true)
   }
 
 
@@ -119,6 +132,17 @@ function AddNewRecipe({ bringUp }) {
           className="submit ui teal button"
         />
       </form>
+      <Modal
+        isOpen={modalOpen}
+        onRequestClose={() => setModalOpen(false)}
+        style={customStyles}
+      >
+        <div>
+          <h2>Success! Recipe Submitted!</h2>
+          <p>Go back to the Recipe Box and your recipe should appear at the bottom of the list of recipe cards!</p>
+          <button onClick={() => setModalOpen(false)} className="ui teal button">Close</button>
+        </div>
+      </Modal>
     </div>
   )
 }
