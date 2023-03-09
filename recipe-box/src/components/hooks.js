@@ -7,6 +7,8 @@ export const useInputs = (anArray = ['']) => {
 
     const add = () => setInputs(arrayOfInputs => [...arrayOfInputs, ''])
 
+    const clear = () => setInputs(anArray)
+
     const display = () => {
         return Children.toArray(value.map((placeholder, i) => {
             const onChange = ({ target: { value } }) => {
@@ -20,6 +22,6 @@ export const useInputs = (anArray = ['']) => {
             return <input {...props} placeholder="Add An Ingredient..." />
         }))
     }
-    return { value, display, add }
+    return { value, display, add, clear }
 
 }

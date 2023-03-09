@@ -28,6 +28,7 @@ function AddNewRecipe({ bringUp }) {
   const theIngredientInputs = useInputs()
   const addAnotherInput = () => theIngredientInputs.add()
   const indexElements = theIngredientInputs.display()
+  const clearForm = () => theIngredientInputs.clear()
   const [modalOpen, setModalOpen] = useState(false);
 
 
@@ -52,8 +53,14 @@ function AddNewRecipe({ bringUp }) {
     })
       .then(r => r.json())
       .then(newRecipe => bringUp(newRecipe))
-
-    setModalOpen(true)
+      setNewName('')
+      setNewImage('')
+      setNewDirections('')
+      setNewTime(0)
+      setNewCuisine('')
+      clearForm()
+      e.target.reset()
+      setModalOpen(true)
   }
 
 
