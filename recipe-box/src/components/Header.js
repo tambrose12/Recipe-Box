@@ -1,8 +1,13 @@
 import { NavLink } from "react-router-dom";
 
-function Header() {
+function Header({buttonText, onDarkModeClick}) {
 
     return (
+        <div>
+            <div id="toggleDarkMode">
+                <button className= "ui toggle button" onClick={onDarkModeClick} >{buttonText} Mode</button>
+            </div>
+        
         <header>
             <h1>Recipe Box</h1>
             <div className="navLink" >
@@ -30,6 +35,7 @@ function Header() {
                 </NavLink>
             </div>
         </header>
+        </div>
     )
 }
 

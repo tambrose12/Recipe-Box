@@ -1,22 +1,22 @@
 import '../App.css';
 import Header from './Header';
 import Footer from './Footer';
-// import Home from './Home';
 import RecipeContainer from './RecipeContainer';
-// import { Route, Switch } from "react-router-dom";
+
+import {useState} from "react";
 
 function App() {
+
+  const [showDarkMode, setShowDarkMode] = useState(false)
+
+  function onDarkModeClick () {
+    setShowDarkMode(!showDarkMode)
+  }
+
   return (
-    <div className="App">
-      <Header />
-      {/* <Switch>
-        <Route exact path="/">
-          <Home />
-        </Route>
-        <Route exact path="/recipe-box" > */}
+    <div className={showDarkMode? "App dark" : "App"}>
+      <Header onDarkModeClick={onDarkModeClick} buttonText={showDarkMode ? "Light": "Dark" } />
       <RecipeContainer />
-      {/* </Route>
-      </Switch> */}
       <footer>
         <Footer />
       </footer>
