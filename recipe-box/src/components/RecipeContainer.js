@@ -20,9 +20,6 @@ function RecipeContainer() {
 
     const filteredByCuisine = sort ? recipes.filter(byCuisine) : [...recipes]
 
-    console.log(filteredByCuisine)
-
-    //set
 
     useEffect(() => {
         fetch("http://localhost:3002/recipes")

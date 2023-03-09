@@ -10,7 +10,7 @@ function Footer() {
                 <figure>
                     <img
                         src="https://images.squarespace-cdn.com/content/v1/53c129c4e4b0c9cf4d63fe7b/1480331786333-N2O4YIO3I4HDOEK6WNZ3/bacon.gif"
-                        class="gif"
+                        className="gif"
                     />
                     <figcaption>
                         <a href ="https://github.com/tambrose12" >Taylor</a>

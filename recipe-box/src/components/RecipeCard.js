@@ -39,7 +39,17 @@ function RecipeCard({ recipe }) {
     const [isLiked, setIsLiked] = useState(false)
 
     function handleLike () {
-    setIsLiked(!isLiked)
+        let likedStatus = !isLiked
+        fetch(`http://localhost:3002/recipes/${recipe.id}`, {
+            method: "PATCH",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify({liked: likedStatus}),
+        })
+        .then(r => r.json())
+        .then(setIsLiked(likedStatus))
+
     }
     const toggleFront = () => {
         setShowFront(showFront => !showFront)

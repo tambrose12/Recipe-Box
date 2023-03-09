@@ -7,13 +7,13 @@ function Search({ handleSearchQuery }) {
 
     return (
         <div id="search">
-            <div class="ui icon input">
+            <div className="ui icon input">
             <input 
             onChange={handleSearch} 
             placeholder="Search Recipes..." 
             name="search" 
             type="text" />
-            <i class="search icon"></i>
+            <i className ="search icon"></i>
             
             </div>
         </div>

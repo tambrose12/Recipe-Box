@@ -39,6 +39,7 @@ function AddNewRecipe({ bringUp }) {
     const newRecipe = {
       name: newName,
       image: newImage,
+      liked: false,
       directions: newDirections,
       time: newTime,
       cuisine: newCuisine,
