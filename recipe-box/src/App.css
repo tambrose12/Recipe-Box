@@ -227,3 +227,8 @@ h2 {
 #duggan {
   flex-grow: 1;
 }
+
+#about p {
+  margin-left: 250px;
+  margin-right: 250px;
+}

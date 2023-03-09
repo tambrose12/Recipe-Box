@@ -55,6 +55,7 @@ function AddNewRecipe({ bringUp }) {
     })
       .then(r => r.json())
       .then(newRecipe => bringUp(newRecipe))
+
     setNewName('')
     setNewImage('')
     setNewDirections('')
