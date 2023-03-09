@@ -13,7 +13,7 @@ function Home() {
             <p>When you get to the Recipe Box, click on the recipe you like and it will show you the Ingredients and Directions on the back of the card.</p>
             <p> Or, if you don't see your favorite recipe in the Box yet, you can follow the link at the top to Add a New Recipe.</p>
             <p>Hang out a while and find some recipes, or share some with the rest of us!</p>
-            <i class="coffee icon"></i>
+            <img src="https://assets.bonappetit.com/photos/5b9a82a575b9f13affe5594e/16:9/w_2580,c_limit/hinge-food-lovers.gif" alt="food swipe gif" className="swipe" />
         </div>
     )
 }
