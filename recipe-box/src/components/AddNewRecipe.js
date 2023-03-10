@@ -93,7 +93,7 @@ function AddNewRecipe({ bringUp }) {
         <br />
         <label>Enter Recipe Directions: </label>
         <br />
-        <input onChange={(e) => setNewDirections(e.target.value)}
+        <textarea onChange={(e) => setNewDirections(e.target.value)}
           value={newDirections}
           type="text"
           name="directions"
