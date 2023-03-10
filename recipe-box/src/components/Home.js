@@ -42,7 +42,7 @@ function Home() {
                                 <h3>Taylor</h3>
                             </figcaption>
                         </figure>
-                        <a href="www.linkedin.com/in/taylorambrose"><i class="linkedin icon"></i></a>
+                        <a href="https://www.linkedin.com/in/taylor-ambrose-b268ab20a/"><i class="linkedin icon"></i></a>
                         <a href="https://github.com/tambrose12"><i class="github icon"></i></a>
                     </div>
                     <div id="duggan">
