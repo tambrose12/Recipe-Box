@@ -215,14 +215,30 @@ h2 {
 
 #graceF {
   margin: 5px;
+  transition: all .2s ease-in-out;
+}
+
+#graceF:hover {
+  transform: scale(1.1);
+
 }
 
 #taylorF {
   margin: 5px;
+  transition: all .2s ease-in-out;
+}
+
+#taylorF:hover {
+  transform: scale(1.1);
 }
 
 #dugganF {
   margin: 5px;
+  transition: all .2s ease-in-out;
+}
+
+#dugganF:hover {
+  transform: scale(1.1);
 }
 
 #social {
