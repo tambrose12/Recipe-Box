@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-// import IngredientInput from "./IngredientInput";
 import { useInputs } from './hooks.js'
 import Modal from "react-modal";
 import { NavLink } from "react-router-dom";

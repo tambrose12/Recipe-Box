@@ -21,37 +21,38 @@ function Home() {
                     <div id="graceF">
                         <h4>Shrimp Scampi</h4>
                         <NavLink
-                        exact
-                        to="/recipe-box">
-                        <img
-                            src="https://www.allrecipes.com/thmb/M_JD8gcZbIWk_TL0yBthlQ4zOs8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/229960-Shrimp-Scampi-with-Pasta-mfs-048-70ffd08f7c4549ffb5367868b5fb7365.jpg"
-                            className="fav"
-                        />   
+                            exact
+                            to="/recipe-box">
+                            <img
+                                src="https://www.allrecipes.com/thmb/M_JD8gcZbIWk_TL0yBthlQ4zOs8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/229960-Shrimp-Scampi-with-Pasta-mfs-048-70ffd08f7c4549ffb5367868b5fb7365.jpg"
+                                className="fav"
+                            />
                         </NavLink>
                     </div>
 
                     <div id="taylorF">
                         <h4>Spicy Miso Ramen</h4>
                         <NavLink
-                        exact
-                        to="/recipe-box">
-                        <img
-                            src="https://dishingouthealth.com/wp-content/uploads/2022/01/SpicyMisoRamen_Styled2.jpg"
-                            className="fav"
-                        />   
+                            exact
+                            to="/recipe-box">
+                            <img
+                                src="https://dishingouthealth.com/wp-content/uploads/2022/01/SpicyMisoRamen_Styled2.jpg"
+                                className="fav"
+                            />
                         </NavLink>
                     </div>
+
                     <div id="dugganF">
                         <h4>Big Mac</h4>
                         <NavLink
-                        exact
-                        to="/recipe-box">
-                        <img
-                            className="fav"
-                            src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg"
-                        />   
+                            exact
+                            to="/recipe-box">
+                            <img
+                                className="fav"
+                                src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg"
+                            />
                         </NavLink>
-                        
+
                     </div>
                 </div>
             </div>

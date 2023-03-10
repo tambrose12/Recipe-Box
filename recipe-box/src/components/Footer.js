@@ -4,7 +4,6 @@ function Footer() {
 
     return (
         <div>
-
             <div>
                 <p>And a special thanks to a coding raver for the custom hook...</p>
                 <figure>

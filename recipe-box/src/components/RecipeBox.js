@@ -20,7 +20,6 @@ function RecipeBox({ recipes, handleSearchQuery, updateSort }) {
                     {renderRecipeCard}
                 </div>
             </div>
-
         </div>
     )
 }
