@@ -27,8 +27,8 @@ function About() {
                             <h3>Grace</h3>
                         </figcaption>
                     </figure>
-                    <a href="https://www.linkedin.com/in/gracenieboer/"><i class="linkedin icon"></i></a>
-                    <a href="https://github.com/gnieb"><i class="github icon"></i></a>
+                    <a href="https://www.linkedin.com/in/gracenieboer/"><i className="linkedin icon"></i></a>
+                    <a href="https://github.com/gnieb"><i className="github icon"></i></a>
                 </div>
 
                 <div id="taylor">
@@ -41,8 +41,8 @@ function About() {
                             <h3>Taylor</h3>
                         </figcaption>
                     </figure>
-                    <a href="https://www.linkedin.com/in/taylor-ambrose-b268ab20a/"><i class="linkedin icon"></i></a>
-                    <a href="https://github.com/tambrose12"><i class="github icon"></i></a>
+                    <a href="https://www.linkedin.com/in/taylor-ambrose-b268ab20a/"><i className="linkedin icon"></i></a>
+                    <a href="https://github.com/tambrose12"><i className="github icon"></i></a>
                 </div>
                 <div id="duggan">
                     <figure>
@@ -54,8 +54,8 @@ function About() {
                             <h3>Duggan</h3>
                         </figcaption>
                     </figure>
-                    <a href="https://www.linkedin.com/in/kevin-duggan-420624164/"><i class="linkedin icon"></i></a>
-                    <a href="https://github.com/Duggan1"><i class="github icon"></i></a>
+                    <a href="https://www.linkedin.com/in/kevin-duggan-420624164/"><i className="linkedin icon"></i></a>
+                    <a href="https://github.com/Duggan1"><i className="github icon"></i></a>
                 </div>
             </div>
         </div>
