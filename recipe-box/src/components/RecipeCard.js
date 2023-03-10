@@ -36,7 +36,7 @@ const RecipeBack = ({ recipe, renderIngredient }) => {
 
 function RecipeCard({ recipe }) {
     const [showFront, setShowFront] = useState(true)
-    const [isLiked, setIsLiked] = useState(false)
+    const [isLiked, setIsLiked] = useState(recipe.liked)
 
     function handleLike () {
         let likedStatus = !isLiked
