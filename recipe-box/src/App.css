@@ -1,5 +1,9 @@
 .App {
   text-align: center;
+
+}
+
+#box {
   margin: 25px;
 }
 
@@ -197,11 +201,29 @@ h2 {
   max-height: 36px;
 }
 
-/* 
-#social {
-  padding-top: 15px;
-  font-size: 20px;
-} */
+#favorites {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.fav {
+  width: 285px;
+  height: 300px;
+  object-fit: cover;
+}
+
+#graceF {
+  margin: 5px;
+}
+
+#taylorF {
+  margin: 5px;
+}
+
+#dugganF {
+  margin: 5px;
+}
 
 #social {
   display: flex;

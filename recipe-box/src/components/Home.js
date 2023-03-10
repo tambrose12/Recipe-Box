@@ -16,47 +16,30 @@ function Home() {
                 <p> Or, if you don't see your favorite recipe in the Box yet, you can follow the link at the top to Add a New Recipe.</p>
                 <p>Hang out a while and find some recipes, or share some with the rest of us!</p>
                 <img src="https://assets.bonappetit.com/photos/5b9a82a575b9f13affe5594e/16:9/w_2580,c_limit/hinge-food-lovers.gif" alt="food swipe gif" className="swipe" />
-                <h3>Check Out The Creators:</h3>
-                <div id="social">
-                    <div id="grace">
-                        <figure>
-                            <img
-                                src="https://images.squarespace-cdn.com/content/v1/53c129c4e4b0c9cf4d63fe7b/1480331789348-38MXDDJ4C5HYWQ7H4NQG/peaches.gif"
-                                className="gif"
-                            />
-                            <figcaption>
-                                <h3>Grace</h3>
-                            </figcaption>
-                        </figure>
-                        <a href="https://www.linkedin.com/in/gracenieboer/"><i class="linkedin icon"></i></a>
-                        <a href="https://github.com/gnieb"><i class="github icon"></i></a>
+                <h3><u>What's Cookin'? Creator Favorites:</u></h3>
+                <div id="favorites">
+                    <div id="graceF">
+                        <h4>Shrimp Scampi</h4>
+                        <img
+                            src="https://www.allrecipes.com/thmb/M_JD8gcZbIWk_TL0yBthlQ4zOs8=/1500x0/filters:no_upscale():max_bytes(150000):strip_icc():format(webp)/229960-Shrimp-Scampi-with-Pasta-mfs-048-70ffd08f7c4549ffb5367868b5fb7365.jpg"
+                            className="fav"
+                        />
+
                     </div>
 
-                    <div id="taylor">
-                        <figure>
-                            <img
-                                src="https://images.squarespace-cdn.com/content/v1/53c129c4e4b0c9cf4d63fe7b/1480331786333-N2O4YIO3I4HDOEK6WNZ3/bacon.gif"
-                                className="gif"
-                            />
-                            <figcaption>
-                                <h3>Taylor</h3>
-                            </figcaption>
-                        </figure>
-                        <a href="https://www.linkedin.com/in/taylor-ambrose-b268ab20a/"><i class="linkedin icon"></i></a>
-                        <a href="https://github.com/tambrose12"><i class="github icon"></i></a>
+                    <div id="taylorF">
+                        <h4>Spicy Miso Ramen</h4>
+                        <img
+                            src="https://dishingouthealth.com/wp-content/uploads/2022/01/SpicyMisoRamen_Styled2.jpg"
+                            className="fav"
+                        />
                     </div>
-                    <div id="duggan">
-                        <figure>
-                            <img
-                                className="gif"
-                                src="https://images.squarespace-cdn.com/content/v1/53c129c4e4b0c9cf4d63fe7b/1480331789992-7VWSLO09C8RKDUZ6FK1X/pizzahh.gif"
-                            />
-                            <figcaption>
-                                <h3>Duggan</h3>
-                            </figcaption>
-                        </figure>
-                        <a href="https://www.linkedin.com/in/kevin-duggan-420624164/"><i class="linkedin icon"></i></a>
-                        <a href="https://github.com/Duggan1"><i class="github icon"></i></a>
+                    <div id="dugganF">
+                        <h4>Big Mac</h4>
+                        <img
+                            className="fav"
+                            src="https://www.themealdb.com/images/media/meals/urzj1d1587670726.jpg"
+                        />
                     </div>
                 </div>
             </div>
