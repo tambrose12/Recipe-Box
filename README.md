@@ -1,4 +1,4 @@
-# phase-2-project
+# Recipe Box
 
 Phase 2 Project - Recipe Box
 
