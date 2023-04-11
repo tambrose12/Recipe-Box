@@ -2,6 +2,9 @@
 
 Phase 2 Project - Recipe Box
 
+![BB5EEE12-7006-4C5E-A0BF-FDD697A787A9_1_102_o](https://user-images.githubusercontent.com/112665601/231229884-94ef627d-9322-42e5-9943-d9c406dd919b.jpeg)
+
+
 Created in React.js by Kevin Tom Duggan, Taylor Ambrose, and Grace Nieboer
 additional credit below to Adam La Rosa
 This project is the culmination of skills learned for during Flatiron School's Phase 2, focused on React.js.
