@@ -21,7 +21,7 @@ We created our own db.json file rather than an API to customize the data structu
 ## Installation
 1. Fork and Clone the repo
    ```sh
-   git clone https://github.com/tambrose12/phase-2-project-Recipe-Box
+   git clone https://github.com/tambrose12/Recipe-Box
    ```
 
 ## Usage
