@@ -12,7 +12,7 @@ The Recipe Box was created as a way to virtually store and acces your favorite r
 * JavaScript
 * Semantic UI
 
-* **Collaborators** - [Kevin Tom Duggan](https://github.com/Duggan1) [Grace Nieboer](https://github.com/gnieb), [Taylor Ambrose](https://github.com/tambrose12)
+* **Collaborators** - [Kevin Tom Duggan](https://github.com/Duggan1), [Grace Nieboer](https://github.com/gnieb), [Taylor Ambrose](https://github.com/tambrose12)
 * additional credit below to Adam La Rosa
 
 ### **API's Used**
